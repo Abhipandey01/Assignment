@@ -1,0 +1,98 @@
+ Q1. Which keyword is used to create a function? Create a function to return a list of odd numbers in the range of 1 to 25.
+
+""" def keyword is used to create a function"""
+list1=[]
+def odd_number(N):
+  for i in range(1,N+1):
+    if i%2!=0 :
+      list1.append(i)
+  return list1
+
+odd_number(25)
+
+# Q2. Why *args and **kwargs is used in some functions? Create a function each for *args and **kwargs to demonstrate their use.
+""" *args means that we can pass the arguments as requirement there is not the fix number of arguments present in that function and
+**kwargs return the value in the form of dictionary like key value pair """
+#using *args
+def addition(*args):
+   result = 0
+   for i in args:
+      result += i
+   return result
+
+#using **kwargs
+def arg_printer(a, b, *args, option=True, **kwargs):
+   print(a, b)
+   print(args)
+   print(option)
+   print(kwargs)
+arg_printer(1, 4, 6, 5, param1=5, param2=6)
+
+Q3. What is an iterator in python? Name the method used to initialise the iterator object and the method
+used for iteration. Use these methods to print the first five elements of the given list [2, 4, 6, 8, 10, 12, 14,
+16, 18, 20].
+
+''' Through the use of iterator we access the all elements of the list or arrays. To initialise the iterator object 
+we use __iter__() or __next__(). '''
+
+list1=[2,4,6,8,10,12,14,16,18,20]
+list2=list1.__iter__()
+i=0
+list3=[]
+while(i<5):
+  m=list2.__next__()
+  list3.append(m)
+  i+=1
+print(list3)
+
+Q4. What is a generator function in python? Why yield keyword is used? Give an example of a generator function.
+ANS- Generator function is is a function that returns an iterator that produces a sequence of values when iterated over.
+Generators are useful when we want to produce a large sequence of values, but we don't want to store all of them in memory at once.
+The yield keyword pauses generator function execution and the value of the expression following the yield keyword is returned to the generator's caller
+
+def my_generator(n):
+    value = 0
+    while value < n:
+        yield value
+        value += 1
+for value in my_generator(4):
+    print(value)
+    
+ Q6. Write a python program to print the first 10 Fibonacci numbers using a while loop.
+ ANS- n=int(input("enter the number : "))
+      i=1
+      a=0
+      b=1
+      while(i<=n):
+        print(b)
+        c=a+b
+        a=b
+        b=c
+        i+=1
+        
+Q7. Write a List Comprehension to iterate through the given string: ‘pwskills’.
+Expected output: ['p', 'w', 's', 'k', 'i', 'l', 'l', 's']
+ANS- string="pwskills"
+     list1=[i for i in string ]
+     print(list1)
+        
+Q8. Write a python program to check whether a given number is Palindrome or not using a while loop.
+
+Num = int(input("Enter a value:"))  
+Temp = num  
+Rev = 0  
+while(num > 0):  
+    dig = num % 10  
+    revrev = rev * 10 + dig  
+    numnum = num // 10  
+if(temp == rev):  
+    print("This value is a palindrome number!")  
+else:  
+    print("This value is not a palindrome number!")  
+     
+Q9. Write a code to print odd numbers from 1 to 100 using list comprehension.
+
+only_odd = [num for num in range(1,100) if num % 2 == 1]
+print(only_odd)
+
+
