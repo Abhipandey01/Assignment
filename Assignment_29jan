@@ -1,0 +1,53 @@
+Q1- WHO DEVELOPED PYTHON PROGRAMMING LANGUAGE?
+ANS- Guido van Rossum
+
+Q2- WHICH TYPE OF PROGRAMMING DOES PYTHON SUPPORT?
+ANS-  Imperative, Functional, and Object-Oriented 
+
+Q3- IS PYTHON CASE SENSITIVE WHEN DEALING WITH IDENTIFIERS ?
+ANS- Yes
+
+Q4- WHAT IS THE CORRECT EXTENSION OF THE PYTHON FILE ?
+ANS- .py
+
+Q5- IS PYTHON CODE COMPILED OR INTERPRETED?
+ANS- Interpreted
+
+Q6- NAME A FEW BLOCKS OF CODE USED TO DEFINE IN PYTHON LANGUAGE ?
+ANS- a module, a function body, and a class definition.
+
+Q7- STATE A CHARACTER USED TO GIVE A SINGLE LINE COMMENTS IN PYTHON ?
+ANS- #
+
+Q8- MENTION FUNCTIONS WHICH CAN HELP US TO FIND THE VERSION OF PYTHON THAT WE CURRENTLY WORKING ON ?
+ANS-  sys.version
+
+Q9- PYTHON SUPPORT THE CREATION OF ANONYMOUS FUNCTIONS AT RUN TIME USING A CONSTRUCT CALL _
+ANS- lambda
+
+Q10- WHAT DOES PIP STAND FOR PYTHON?
+ANS- To install the packages
+
+Q11- MENTION A FEW BUILT IN FUNCTION IN PYTHON ?
+ANS- min,max,sum,reduce,filter,lambda etc.
+
+Q12- WHAT IS MAXIMUM POSSIBLE LENGTH OF AN IDENTIFIER IN PYTHON ?
+ANS- 79 char.
+
+Q13- WHAT ARE THE BENEFITS OF USING PYTHON ?
+ANS- make programmers more efficient, Instead of writing long lines of code to accomplish a common task,
+coders can simply call upon a library, easy to use, mainly offers code readability.
+
+Q14- HOW IS MEMORY MANAGED IN PYTHON ?
+ANS-  involves a private heap containing all Python objects and data structures.
+
+Q15- HOW TO INSTALL PYTHON ON WINDOWS AND SET PATH VARIABLES ?
+ANS- Right-clicking This PC and going to Properties.
+Clicking on the Advanced system settings in the menu on the left.
+Clicking on the Environment Variables button on the bottom right.
+In the System variables section, selecting the Path variable and clicking on Edit.
+The next screen will show all the directories that are currently a part of the PATH variable.
+Clicking on New and entering Python’s install directory.
+
+Q16- IS INDENTATION REQUIRED IN PYTHON ?
+ANS- Yes
