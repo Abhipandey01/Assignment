@@ -1,0 +1,24 @@
+Q1. What is an API? Give an example, where an API is used in real life.
+
+
+Ans- APIs are used in web applications to connect user-facing front ends with critical back-end functionality and data. APIs are used to deliver material by streaming services such as Spotify and Netflix. APIs are used by automakers such as Tesla to provide software upgrades.
+
+
+
+Q2. Give advantages and disadvantages of using API.
+
+Ans- Advantages-APIs improve customization by allowing developers to access and use data and functionality from other applications.  Disadvantages-potential for security risks, the need for specialized knowledge, and the potential for compatibility issues.
+
+
+Q3. What is a Web API? Differentiate between API and Web API.
+
+Ans-  A Web API is an application programming interface for the Web.API is an interface that exposes an application's data to outside software, whereas web applications are one type of API with stricter requirements.
+
+Q4. Explain REST and SOAP Architecture. Mention shortcomings of SOAP.
+
+Ans- What is REST and SOAP architecture?
+REST is a set of guidelines that offers flexible implementation, whereas SOAP is a protocol with specific requirements like XML messaging. REST APIs are lightweight, making them ideal for newer contexts like the Internet of Things (IoT), mobile application development, and serverless computing.
+
+Q5. Differentiate between REST and SOAP.
+
+Ans- REST is a set of guidelines that offers flexible implementation, whereas SOAP is a protocol with specific requirements like XML messaging.
