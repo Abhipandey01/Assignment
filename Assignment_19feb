@@ -1,0 +1,72 @@
+Q1. What is Flask Framework? What are the advantages of Flask Framework?
+
+Ans- Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+Some of the features of Flask are: Lightweight: It is a lightweight framework as it is independent of external libraries. It gives a quick start to the
+web development process of complex applications. Independent: Flask gives independent or full control to the developer for creating applications.
+
+Q2. Create a simple Flask application to display ‘Hello World!!’. Attach the screenshot of the output in Jupyter Notebook.
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<h1>Hello, World!</h1>"
+
+if __name__=="__main__":
+    app.run(host="0.0.0.0")
+    
+    
+Q3. What is App routing in Flask? Why do we use app routes?
+
+Ans- App routing is used to map the specific URL with the associated function that is intended to perform some task.
+
+Q4. Create a “/welcome” route to display the welcome message “Welcome to ABC Corporation” and a “/” route to show the following
+details: Company Name: ABC Corporation Location: India Contact Detail: 999-999-9999
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def Company_details():
+    return "<h1>Company Name: ABC Corporation Location: India Contact Detail: 999-999-9999</h1>"
+
+@app.route("/welcome")
+def welcome():
+    return "<h1>Welcome to ABC Corporation</h1>"
+if __name__=="__main__":
+    app.run(host="0.0.0.0")
+    
+    
+Q5. What function is used in Flask for URL Building? Write a Python code to demonstrate the working of the url_for() function.
+
+Ans- The url_for() function is very useful for dynamically building a URL for a specific function. The function accepts the name of 
+a function as first argument, and one or more keyword arguments, each corresponding to the variable part of URL.
+
+from flask import Flask
+app = Flask(__name__)  
+  
+@app.route('/admin')  
+def admin():  
+    return 'admin'  
+  
+@app.route('/librarion')  
+def librarion():  
+    return 'librarion'  
+  
+@app.route('/student')  
+def student():  
+    return 'student'  
+  
+@app.route('/user/<name>')  
+def user(name):  
+    if name == 'admin':  
+        return redirect(url_for('admin'))  
+    if name == 'librarion':  
+        return redirect(url_for('librarion'))  
+    if name == 'student':  
+        return redirect(url_for('student'))  
+if __name__ =='__main__':  
+    app.run(debug = True)  
