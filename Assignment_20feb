@@ -1,0 +1,20 @@
+Q1. Explain GET and POST methods.
+Ans-  GET and POST method is used to transfer data from client to server in HTTP protocol but Main difference
+between POST and GET method is that GET carries request parameter appended in URL string while POST carries request parameter in message body .
+
+Q2. Why is request used in Flask?
+Ans- The Flask Request Object is used to perform both sending and receiving operations from a user's browser to the server and process 
+the request data from the server.
+
+Q3. Why is redirect() used in Flask?
+Ans- Flask class has a redirect() function. When called, it returns a response object and redirects the user to another target location 
+with specified status code. location parameter is the URL where response should be redirected. statuscode sent to browser's header, defaults to 302.
+
+Q4. What are templates in Flask? Why is the render_template() function used?
+Ans- render_template is a Flask function from the flask. templating package. render_template is used to generate output from a template file based on
+the Jinja2 engine that is found in the application's templates folder. Note that render_template is typically imported directly from the flask package 
+instead of from flask.
+
+Q5. Create a simple API. Use Postman to test it. Attach the screenshot of the output in the Jupyter Notebook.
+Ans- ???????
+
